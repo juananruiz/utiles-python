@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Comisión de Servicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .signature {
+            margin-top: 40px;
+        }
+        .firm {
+            font-weight: bold;
+        }
+        .firmado {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>SOLICITUD DE COMISIÓN DE SERVICIO</h1>
+    <h2>Dirección de Recursos Humanos</h2>
+
+    <p class="section-title">1.- Datos del Interesado</p>
+    <p>
+        <strong>Nombre y Apellidos:</strong> {{nombre_empleado}}<br>
+        <strong>N.I.F.:</strong> 28587638 H<br>
+        <strong>Cuerpo o Categoría:</strong> Laboral Grupo I<br>
+        <strong>Puesto Desempeñado:</strong> {{puesto_empleado}}<br>
+        <strong>Centro:</strong> Dirección de Recursos Humanos
+    </p>
+
+    <p class="section-title">2.- Datos del Viaje Objeto de la Solicitud</p>
+    <p>
+        <strong>Objeto del desplazamiento:</strong> Reunión de gestión internacional.<br>
+        <strong>Organizado por:</strong> Universidades europeas<br>
+        <strong>Lugar de celebración:</strong> Niza<br>
+        <strong>Fecha:</strong> 10-12 Junio<br>
+        <strong>Hora de salida:</strong> 13.25<br>
+        <strong>Hora de regreso:</strong> 22.20<br>
+        <strong>Medio de locomoción:</strong> Avión, Taxi, Vehículo con conductor.
+    </p>
+
+    <p class="section-title">3.- Financiación</p>
+    <p>
+        <strong>Presupuesto/Crédito:</strong> 111111111<br>
+        Sevilla, a la fecha de la firma
+    </p>
+
+    <div class="signature">
+        <p><strong>EL SOLICITANTE:</strong></p>
+        <p class="firmado">Fdo.: {{nombre_empleado}}</p>
+
+        <p><strong>EL RESPONSABLE DEL CENTRO:</strong></p>
+        <p class="firmado">Fdo.: (Pendiente de firma)</p>
+    </div>
+
+    <p class="section-title">Autorización</p>
+    <p>
+        Vista la solicitud presentada por el Interesado cuyos datos figuran más arriba, este Rectorado ha resuelto autorizar el desplazamiento solicitado, de acuerdo con los datos anteriormente expuestos y con derecho a la percepción de la indemnización que legalmente corresponda.
+    </p>
+
+    <div class="signature">
+        <p><strong>EL DIRECTOR DE ESTRATEGIA INTERNACIONAL:</strong></p>
+        <p><strong>EL DIRECTOR DE RR.HH.:</strong></p>
+    </div>
+
+    <p class="section-title">Documentación a aportar para su tramitación económica:</p>
+    <ol>
+        <li>Justificación con los documentos originales (documentación de desplazamientos y tarjetas de embarque, o en su caso factura de agencia de viaje).</li>
+        <li>Certificación de asistencia.</li>
+    </ol>
+
+    <p><strong>SR. DIRECTOR DE RECURSOS HUMANOS. UNIVERSIDAD INTERNACIONAL</strong></p>
+
+</body>
+</html>

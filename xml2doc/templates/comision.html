@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Comisión de Servicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 40px;
+            border: 1px solid #000;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            border-bottom: 1px solid #000;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        .section p {
+            margin: 5px 0;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .signature {
+            text-align: center;
+            width: 45%;
+        }
+
+        .signature p {
+            margin: 0;
+        }
+
+        .signature .firmado {
+            margin-top: 40px;
+            font-style: italic;
+        }
+
+        .verification-section {
+            margin-top: 40px;
+        }
+
+        .verification-section p {
+            font-size: 12px;
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box">SOLICITUD DE COMISIÓN DE SERVICIO</div>
+
+        <div class="header">
+            <h1>DIRECCIÓN DE RECURSOS HUMANOS</h1>
+        </div>
+
+        <div class="section">
+            <p class="section-title">1.- DATOS DEL INTERESADO</p>
+            <p><span class="bold">Nombre y Apellidos:</span>{{nombre_empleado}}</p>
+            <p><span class="bold">N.I.F.:</span>{{nif_empleado}}</p>
+            <p><span class="bold">Cuerpo o Categoría:</span> Escala Técnicas</p>
+            <p><span class="bold">Puesto Desempeñado:</span> Director Técnico</p>
+            <p><span class="bold">Centro:</span> Dirección de Recursos Humanos</p>
+        </div>
+
+        <div class="section">
+            <p class="section-title">2.- DATOS DEL VIAJE OBJETO DE LA SOLICITUD</p>
+            <p><span class="bold">Objeto del desplazamiento:</span> Reunión de gestión internacional.</p>
+            <p><span class="bold">Organizado por:</span> Universidad Internacional / Universidad de Niza</p>
+            <p><span class="bold">Lugar de celebración:</span> Niza</p>
+            <p><span class="bold">Fecha:</span> 10-12 Junio</p>
+            <p><span class="bold">Hora de salida:</span> 13.25</p>
+            <p><span class="bold">Hora de regreso:</span> 22.20</p>
+            <p><span class="bold">Medio de locomoción:</span> Avión, Taxi, Vehículo con conductor</p>
+        </div>
+
+        <div class="section">
+            <p class="section-title">3.- FINANCIACIÓN</p>
+            <p><span class="bold">Presupuesto/Crédito:</span> 1111111111</p>
+            <p>Segovia, a la fecha de la firma</p>
+        </div>
+
+        <div class="signature-section">
+            <div class="signature">
+                <p><span class="bold">EL SOLICITANTE</span></p>
+                <p class="firmado">Fdo.: {{nombre_empleado}}</p>
+            </div>
+            <div class="signature">
+                <p><span class="bold">EL RESPONSABLE DEL CENTRO</span></p>
+                <p class="firmado">Fdo.: (Pendiente de firma)</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <p>Vista la solicitud presentada por el Interesado cuyos datos figuran más arriba, este Rectorado ha resuelto autorizar el desplazamiento solicitado, de acuerdo con los datos anteriormente expuestos y con derecho a la percepción de la indemnización que legalmente corresponda.</p>
+        </div>
+
+        <div class="signature-section">
+            <div class="signature">
+                <p><span class="bold">CON CARGO A CRÉDITOS DEL CENTRO</span></p>
+            </div>
+            <div class="signature">
+                <p><span class="bold">EL DIRECTOR DE RR.HH.</span></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <p class="section-title">Documentación a aportar para su tramitación económica:</p>
+            <ol>
+                <li>Justificación con los documentos originales (documentación de desplazamientos y tarjetas de embarque, o en su caso factura de agencia de viaje).</li>
+                <li>Certificación de asistencia.</li>
+            </ol>
+        </div>
+    </div>
+
+</body>
+</html>

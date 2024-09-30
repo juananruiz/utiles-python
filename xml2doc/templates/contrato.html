@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrato de Trabajo Laboral</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .signature {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature div {
+            width: 40%;
+            text-align: center;
+        }
+        .signature div p {
+            border-top: 1px solid #000;
+            margin-top: 50px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contrato de Trabajo Laboral</h1>
+        
+        <div class="section">
+            <p><strong>Ciudad:</strong>Sevilla</p>
+            <p><strong>Fecha:</strong>{{fecha_inicio}}</p>
+        </div>
+
+        <div class="section">
+            <p><strong>Parte Empleadora:</strong>Universidad Internacional</p>
+            <p><strong>Representada por:</strong>Miguel de Cervantes Saavedra</p>
+            <p><strong>Dirección:</strong>C/ San Fernando, 4 11004 España</p>
+        </div>
+
+        <div class="section">
+            <p><strong>Empleado/a:</strong> {{nombre_empleado}}</p>
+            <p><strong>Dirección:</strong>{{direccion_empleado}}</p>
+            <p><strong>DNI/NIF:</strong>{{nif_empleado}}</p>
+        </div>
+
+        <div class="section">
+            <h2>Cláusulas</h2>
+            <p><strong>Primera:</strong> El empleado se compromete a prestar sus servicios a la parte empleadora en el cargo de {{puesto_empleado}}, cumpliendo con las tareas y funciones que le sean asignadas.</p>
+            <p><strong>Segunda:</strong> La parte empleadora se compromete a abonar un salario de {{salario_empleado}} euros mensuales, en concepto de retribución por los servicios prestados.</p>
+            <p><strong>Tercera:</strong> La jornada laboral será de {{horas_semanales}} horas semanales, distribuidas de acuerdo con la legislación vigente.</p>
+            <p><strong>Cuarta:</strong> El presente contrato tendrá una duración de {{duracion_contrato}}, comenzando el {{fecha_inicio}} y finalizando el {{fecha_fin}}, pudiendo ser renovado de común acuerdo entre las partes.</p>
+        </div>
+    </div>
+</body>
+</html>
