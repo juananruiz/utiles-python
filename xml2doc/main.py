@@ -20,7 +20,7 @@ def format_fecha(fecha):
     return fecha.strftime("%-d de %B de %Y")
 
 # Crear carpeta "documentos" si no existe
-os.makedirs('documentos', exist_ok=True)
+os.makedirs('documents', exist_ok=True)
 
 # Crear contadores a cero
 contador_empleados = 0
@@ -39,8 +39,8 @@ for index, row in df.iterrows():
         continue  # Se asegura de que se continúe con el siguiente empleado
     
     contador_empleados += 1
-    # Crear carpeta para el nombre dentro de "documentos"
-    empleado_folder = os.path.join('documentos', nombre_empleado)
+    # Crear carpeta para el nombre dentro de "documents"
+    empleado_folder = os.path.join('documents', nombre_empleado)
     os.makedirs(empleado_folder, exist_ok=True)
     
     # Renderizar y guardar cada modelo
